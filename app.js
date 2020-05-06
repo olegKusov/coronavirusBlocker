@@ -5,10 +5,21 @@ let scrollTimer, lastScrollFireTime = 0;
 const regexpEn = new RegExp('coronavirus|virus|covid\-19|covid19|covid 19|virus|pandemic|epidemic|quarantine');
 const regexpRu = new RegExp('коронавирус|пандеми|эпидеми|вирус|карантин');
 const regexpTurk = new RegExp('coronavirüs|yaygın|salgın|virüs|karantina');
-const regexpGerman = new RegExp('coronavirus|pandemie|epidemie|virus|quarantäne');
-const regexpItalian = new RegExp('coronavirus|pandemia|epidemia|virus|quarantena');
+const regexpGerman = new RegExp('pandemie|epidemie|virus|quarantäne');
+const regexpItalian = new RegExp('pandemia|epidemia|virus|quarantena');
 const regexpAzer = new RegExp('koronavirus|pandemiya|epidemiya|virus|karantin');
-const regexpBelorus = new RegEdp('коронавирус|пандэміі|эпідэмія|вірус|каранцін');
+const regexpBelorus = new RegExp('коронавирус|пандэміі|эпідэмія|вірус|каранцін');
+const regexpCn = new RegExp('冠状病毒|大流行|流行|病毒|检疫');
+const regexpHindi = new RegExp('कोरोनावायरस|महामारी|महामारी|वायरस|संगरोध');
+const regexpSp = new RegExp('pandemia|epidemia|virus|cuarentena');
+const regexpArab = new RegExp('الفيروس التاجي|الوباء|الوباء|الفيروس|الحجرالصحي');
+const regexpBeng = new RegExp('করোনভাইরাস|মহামারী|মহামারী|ভাইরাস|পৃথকীকরণ');
+const regexpPortu = new RegExp('coronavírus|pandemia|epidemia|vírus|quarentena');
+const regexpFr = new RegExp('pandémie|épidémie|virus|quarantaine');
+const regexpGr = new RegExp('πανδημία|επιδημία|ιός|καραντίνα');
+const regexpGe = new RegExp('პანდემიის|ეპიდემიის|ვირუსი|საკარანტინო');
+const regexpUa = new RegExp('коронавірус|пандемія|епідемія|вірус|карантин');
+const regexpJp = new RegExp('コロナウイルス|パンデミック|流行|ウイルス|検疫');
 
 var combinedRegexp = new RegExp(regexpEn.source + "|" + regexpRu.source + "|" + regexpTurk.source, 'gi');
 
