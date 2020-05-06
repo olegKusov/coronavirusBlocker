@@ -1,0 +1,14 @@
+{
+    "manifest_version": 2,
+    "name": "Coronavirus Blocker (for all languages)",
+    "version": "1.0.0",
+    "description": "Blocks all content with coronavirus info",
+	"icons": {
+          "128": "icon_128.png" },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["app.js"]
+        }
+    ]
+}
