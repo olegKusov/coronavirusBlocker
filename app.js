@@ -2,9 +2,13 @@ const url = window.location.toString();
 const blockTags = "h1, h2, h3, h4, a, p, span";
 let scrollTimer, lastScrollFireTime = 0;
 
-const regexpEn = new RegExp('coronavirus|virus|covid\-19|covid19|covid 19|virus|pandemic|epidemic');
+const regexpEn = new RegExp('coronavirus|virus|covid\-19|covid19|covid 19|virus|pandemic|epidemic|quarantine');
 const regexpRu = new RegExp('коронавирус|пандеми|эпидеми|вирус|карантин');
-const regexpTurk = new RegExp('coronavirüs|yaygın|salgın|virüs');
+const regexpTurk = new RegExp('coronavirüs|yaygın|salgın|virüs|karantina');
+const regexpGerman = new RegExp('coronavirus|pandemie|epidemie|virus|quarantäne');
+const regexpItalian = new RegExp('coronavirus|pandemia|epidemia|virus|quarantena');
+const regexpAzer = new RegExp('koronavirus|pandemiya|epidemiya|virus|karantin');
+const regexpBelorus = new RegEdp('коронавирус|пандэміі|эпідэмія|вірус|каранцін');
 
 var combinedRegexp = new RegExp(regexpEn.source + "|" + regexpRu.source + "|" + regexpTurk.source, 'gi');
 
@@ -17,7 +21,6 @@ const removeWords = (tags, regexp) => {
             element.remove();
         }
     }
-    console.log(counter);
 }
 
 const removeYouTube = (regexp) => {
@@ -25,7 +28,6 @@ const removeYouTube = (regexp) => {
     const elements = document.querySelectorAll("yt-formatted-string");
     for(element of elements) {
         if(element.textContent.match(regexp)) {
-            console.log(element);
             counter++;
             if(element.closest('ytd-video-renderer')) element.closest('ytd-video-renderer').remove();
         }
