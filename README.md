@@ -1,0 +1,1 @@
+Blocks all content related to coronavirus
