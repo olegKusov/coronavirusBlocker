@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "Coronavirus Blocker (multi-lang)",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "Remove text blocks with coronavirus keywords (corona, covid19, etc.)",
 	"icons": {
           "128": "icon_128.png" },
